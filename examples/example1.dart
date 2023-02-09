@@ -1,10 +1,3 @@
-# Moment for Dart
-
-Inspired by [moment](https://github.com/pd4d10/moment) and `Js Library` [momentjs](https://github.com/moment/moment)
-
-## Usage
-
-```dart
 import '../lib/moment.dart';
 
 main() {
@@ -22,11 +15,11 @@ main() {
   m.second; // 58
 
   // Manipulate
-  print(m.add(years: 1, quarters: 2, months: 3));
-  print(m.subtract(weeks: 1, days: 2, hours: 3));
+  m.add(years: 1, quarters: 2, months: 3);
+  m.subtract(weeks: 1, days: 2, hours: 3);
 
-  print(m.startOf(MomentExUnit.year).format()); 
-  print(m.startOf(MomentExUnit.week));  
+  print(m.startOf(MomentExUnit.year).format()); // Start of the year
+  m.startOf(MomentExUnit.week); // Start of the week
 
   // Display
   print(m.format('yyyy-MM-dd'));
@@ -34,9 +27,3 @@ main() {
   print(m.add(years: 2).format('yyyy-M-dd'));
   print(m.add(years: 2).add(months: 8).format('yyyy-M-dd'));
 }
-
-```
-
-## License
-
-MIT

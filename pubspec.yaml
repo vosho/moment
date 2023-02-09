@@ -1,0 +1,8 @@
+name: moment
+description: moment for Dart
+version: 0.0.1
+homepage: https://github.com/vosho/moment
+author: Steven Wang
+
+environment:
+  sdk: ">=2.0.0 <3.0.0"
